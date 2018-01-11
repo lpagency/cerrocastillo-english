@@ -732,7 +732,19 @@ img#cerrocastillo-english_footer_logo {
 
 @media screen and (min-width: 1200px) {
   .header-item + .header-item {
-    margin-left: 2rem;
+    margin-left: 0rem;
+  }
+
+  .header-team{
+    margin-right: -45px;
+  }
+
+  .header-investments{
+    margin-right: 7px;
+  }
+
+  .header-box{
+    margin-right: 28px;
   }
 }
 
