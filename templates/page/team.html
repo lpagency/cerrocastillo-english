@@ -7,7 +7,13 @@
 {% block header %}
  {% include '../home/header.html' %}
 {% end %}
-
+{% block css %}
+<style type="text/css">
+  .team{
+    position: relative !important;
+  }
+</style>
+{% end %}
 
 {% block javascript %}
 <script  type="text/javascript" src="{{ site_base }}/static/js/app.js"></script>
@@ -79,7 +85,7 @@
     <div class="col-xs-12">
       <div class="popup-open team-item" data-popup="gonzalo">
         {% if is_admin %}
-          <div class="image-upload lapiz visible-movil">
+          <div class="image-upload lapiz visible-movil team">
             <label for="img_banner_chic_1">
               <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
             </label>
@@ -94,7 +100,7 @@
       </div>
       <div class="popup-open team-item" data-popup="sergio">
         {% if is_admin %}
-          <div class="image-upload lapiz visible-movil">
+          <div class="image-upload lapiz visible-movil team">
             <label for="img_banner_chic_2">
               <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
             </label>
@@ -109,7 +115,7 @@
       </div>
       <div class="popup-open team-item" data-popup="isidro">
         {% if is_admin %}
-          <div class="image-upload lapiz visible-movil">
+          <div class="image-upload lapiz visible-movil team">
             <label for="img_banner_chic_3">
               <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
             </label>
