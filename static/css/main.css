@@ -30,6 +30,10 @@ span {
     position: absolute;
 }
 
+.focus{
+  top: -80px;
+}
+
 .img-footer-logo{
     width: 200px;
     height: 200px;
