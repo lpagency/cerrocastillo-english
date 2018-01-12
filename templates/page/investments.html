@@ -7,7 +7,13 @@
 {% block header %}
  {% include '../home/header.html' %}
 {% end %}
-
+{% block css %}
+<style type="text/css">
+    .portafolio{
+        position: relative !important;
+    }
+</style>
+{% end %}
 
 {% block javascript %}
 <script  type="text/javascript" src="{{ site_base }}/static/js/app.js"></script>
@@ -42,6 +48,7 @@
     </div>
 </section>
 
+
 <section class="container investments">
     <div class="row">
         <div class="col-xs-12">
@@ -50,7 +57,7 @@
                 <div class="investments-item">
                     <div class="investments-item-logo">
                         {% if is_admin %}
-                            <div class="image-upload lapiz visible-movil" style="right: 820px;top: 220px;">
+                            <div class="image-upload banner-invest lapiz visible-movil portafolio">
                                 <label for="img_banner_investments_1">
                                     <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
                                 </label>
@@ -83,7 +90,7 @@
                 <div class="investments-item">
                     <div class="investments-item-logo">
                         {% if is_admin %}
-                            <div class="image-upload lapiz visible-movil" style="right: 820px;top: 550px;">
+                            <div class="image-upload banner-invest lapiz visible-movil portafolio">
                                 <label for="img_banner_investments_2">
                                     <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
                                 </label>
@@ -116,7 +123,7 @@
                 <div class="investments-item">
                     <div class="investments-item-logo">
                         {% if is_admin %}
-                            <div class="image-upload lapiz visible-movil" style="right: 820px;top: 900px;">
+                            <div class="image-upload banner-invest lapiz visible-movil portafolio">
                                 <label for="img_banner_investments_3">
                                     <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
                                 </label>
@@ -149,7 +156,7 @@
                 <div class="investments-item">
                     <div class="investments-item-logo">
                         {% if is_admin %}
-                            <div class="image-upload lapiz visible-movil" style="right: 820px;top: 1220px;">
+                            <div class="image-upload banner-invest lapiz visible-movil portafolio">
                                 <label for="img_banner_investments_4">
                                     <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
                                 </label>
@@ -182,7 +189,7 @@
                 <div class="investments-item">
                     <div class="investments-item-logo">
                         {% if is_admin %}
-                            <div class="image-upload lapiz visible-movil" style="right: 820px;top: 1560px;">
+                            <div class="image-upload banner-invest lapiz visible-movil portafolio">
                                 <label for="img_banner_investments_5">
                                     <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
                                 </label>
@@ -215,7 +222,7 @@
                 <div class="investments-item">
                     <div class="investments-item-logo">
                         {% if is_admin %}
-                            <div class="image-upload lapiz visible-movil" style="right: 820px;top: 1900px;">
+                            <div class="image-upload banner-invest lapiz visible-movil portafolio">
                                 <label for="img_banner_investments_6">
                                     <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
                                 </label>
@@ -248,7 +255,7 @@
                 <div class="investments-item">
                     <div class="investments-item-logo">
                         {% if is_admin %}
-                            <div class="image-upload lapiz visible-movil" style="right: 820px;top: 2200px;">
+                            <div class="image-upload banner-invest lapiz visible-movil portafolio">
                                 <label for="img_banner_investments_7">
                                     <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
                                 </label>

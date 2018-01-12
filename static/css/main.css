@@ -1002,6 +1002,7 @@ img#cerrocastillo-english_footer_logo {
   }
 }
 
+
 /*------------- 7. APPROACH -------------*/
 .approach {
   padding: 9.4167rem 15px 11.4167rem 15px;
@@ -1065,7 +1066,7 @@ img#cerrocastillo-english_footer_logo {
 @media screen and (min-width: 768px) {
   .approach-item-img {
     margin-bottom: 0;
-    margin-left: 2.25rem;
+    margin-left: 6.25rem;
     width: 425px;
     height: 426px;
     -webkit-box-ordinal-group: 3;
@@ -1075,6 +1076,7 @@ img#cerrocastillo-english_footer_logo {
     max-width: 425px;
     object-fit: cover;
     max-height: 426px;
+    border-radius: 50%;
   }
 }
 
@@ -1105,6 +1107,7 @@ img#cerrocastillo-english_footer_logo {
     order: 1;
     margin-left: 0;
     margin-right: 6.25rem;
+    border-radius: 50%;
   }
 }
 
@@ -1181,7 +1184,8 @@ img#cerrocastillo-english_footer_logo {
 
 @media screen and (min-width: 1200px) {
   .focus-item {
-    max-height: 550px;
+    max-height: inherit;
+    height: inherit;
   }
 }
 
@@ -1270,18 +1274,12 @@ img#cerrocastillo-english_footer_logo {
     height: 122px;
     max-width: 290px;
     max-height: 122px;
-    object-fit: cover;
+    object-fit: contain;
 }
-
 
 @media screen and (min-width: 768px) {
   .investments-item-copy {
     width: 70%;
-  }
-
-  .investments-item-logo-img {
-    width: 204px;
-    object-fit: contain;
   }
 }
 
@@ -1325,14 +1323,8 @@ img#cerrocastillo-english_footer_logo {
 }
 
 /*------------- 10. TEAM -------------*/
-.team {
-  padding: 5rem 15px 6.667rem 15px;
-}
-
-@media screen and (min-width: 768px) {
-  .team {
-    padding: 7.5rem 15px 10rem 15px;
-  }
+.mg-bt-10{
+  margin-bottom: 10%;
 }
 
 .team-item {
@@ -1369,18 +1361,6 @@ img#cerrocastillo-english_footer_logo {
     object-fit: scale-down;
     height: auto;
   }
-
-  .banner-bg{
-    width: 100%;
-    object-fit: scale-down;
-    height: auto;
-  }
-
-  .intro-img{
-    width: 100%;
-    object-fit: scale-down;
-    height: auto;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1405,6 +1385,14 @@ img#cerrocastillo-english_footer_logo {
   }
 }
 
+@media screen and (max-width: 420px) {
+  .banner-bg {
+    width: 100%;
+    object-fit: scale-down;
+    height: auto;
+}
+}
+
 @media screen and (min-width: 1200px) {
   .team-item-copy {
     top: 5rem;
@@ -1413,16 +1401,17 @@ img#cerrocastillo-english_footer_logo {
 }
 
 .team-item-role, .team-item-name {
-    width: 480px;
+    width: 535px;
     height: 45px;
     overflow: hidden;
     letter-spacing: 0.15em;
     text-transform: uppercase;
 }
 
-@media screen and (max-width: 420px){
+@media screen and (max-width: 375px) {
   .team-item-role, .team-item-name {
-    width: 100%;
+    width: 340px;
+    height: 88px;
   }
 }
 
