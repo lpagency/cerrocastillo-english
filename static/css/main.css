@@ -31,7 +31,7 @@ span {
 }
 
 .focus{
-  top: -80px;
+  top: -80px !important;
 }
 
 .img-footer-logo{
