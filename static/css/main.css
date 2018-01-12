@@ -1364,6 +1364,10 @@ img#cerrocastillo-english_footer_logo {
     object-fit: scale-down;
     height: auto;
   }
+
+  .banner-title{
+      height: 90px;
+  }
 }
 
 @media screen and (min-width: 768px) {
