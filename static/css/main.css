@@ -30,7 +30,7 @@ span {
     position: absolute;
 }
 
-.focus{
+.focus-banner{
   top: -80px !important;
 }
 
@@ -1368,6 +1368,10 @@ img#cerrocastillo-english_footer_logo {
     object-fit: scale-down;
     height: auto;
     margin-left: 20px;
+  }
+
+  .focus-banner{
+    top: 0px !important;
   }
 
   .margen-portafolio{
