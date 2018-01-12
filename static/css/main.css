@@ -1366,7 +1366,7 @@ img#cerrocastillo-english_footer_logo {
     margin-left: 20px;
   }
 
-  .margen-porfatolio{
+  .margen-portafolio{
     left: 0px !important;
   }
 
@@ -1377,6 +1377,7 @@ img#cerrocastillo-english_footer_logo {
 
   .banner-title{
       height: 90px;
+      top: 0px;
   }
 }
 
