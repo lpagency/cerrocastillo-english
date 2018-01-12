@@ -1375,7 +1375,7 @@ img#cerrocastillo-english_footer_logo {
   }
 
   .banner-por{
-    margin-bottom: -5rem;
+    margin-bottom: -5rem !important;
   }
 
   .index-text{
