@@ -30,6 +30,10 @@ span {
     position: absolute;
 }
 
+.banner-por{
+  top: -100px !important;
+}
+
 .focus-banner{
   top: -80px !important;
 }
