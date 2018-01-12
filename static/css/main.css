@@ -1366,6 +1366,15 @@ img#cerrocastillo-english_footer_logo {
     margin-left: 20px;
   }
 
+  .margen-porfatolio{
+    left: 0px !important;
+  }
+
+  .hyper{
+    top: 0px;
+    left: 0px;
+  }
+
   .banner-title{
       height: 90px;
   }
