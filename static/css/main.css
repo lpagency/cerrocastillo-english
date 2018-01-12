@@ -1375,6 +1375,13 @@ img#cerrocastillo-english_footer_logo {
     margin-left: 20px;
   }
 
+  .intro-img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+  }
+
   .banner-por{
     margin-bottom: -5rem !important;
   }
