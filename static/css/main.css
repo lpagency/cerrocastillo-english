@@ -1432,6 +1432,9 @@ img#cerrocastillo-english_footer_logo {
 }
 
 @media screen and (min-width: 768px) {
+  .investments-item-logo-img {
+    width: 200px;
+  }
   .team-item-copy {
     margin-top: 0;
     position: absolute;
