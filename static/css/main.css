@@ -627,7 +627,11 @@ img#cerrocastillo-english_footer_logo {
 }
 
 @media screen and (min-width: 768px) {
+  .investments-item-logo-img {
+    width: 200px;
+  }
   .header-logo {
+    background-color: white;
     padding: 0;
     width: 25%;
     max-width: 200px;
@@ -1194,6 +1198,11 @@ img#cerrocastillo-english_footer_logo {
 }
 
 @media screen and (min-width: 1200px) {
+  .investments-item-logo-img {
+    width: 260px;
+    position: relative;
+    left: -20px;
+  }
   .focus-item {
     max-height: inherit;
     height: inherit;
@@ -1218,6 +1227,11 @@ img#cerrocastillo-english_footer_logo {
 }
 
 @media screen and (min-width: 768px) {
+  .header-item-arrow{
+    width: 30px;
+    left: 20px;
+    top: 8px;
+  }
   .investments {
     padding: 5.625rem 15px;
   }
