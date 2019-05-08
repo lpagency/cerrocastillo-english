@@ -1,0 +1,368 @@
+{% extends "../base.html" %}
+
+{% block title %}
+{{ site.name }}
+{% end %}
+
+{% block header %}
+ {% include '../home/header.html' %}
+{% end %}
+
+{% block css %}
+<style type="text/css">
+    .portafolio{
+        position: relative !important;
+    }
+</style>
+{% end %}
+
+{% block javascript %}
+<script type="text/javascript" src="{{ site_base }}/{{ nocache_static }}/js/app.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".hyper").attr("href", "https://es.cerrocastillocapital.cl/inversion_inmobiliario");
+    });
+</script>
+{% end %}
+
+{% block body %}
+{% if is_admin %} {% set editabletext = 'editabletext' %} {% else %} {% set editabletext = '' %} {% end %}
+
+<section class="container-fluid banner">
+    {% if is_admin %}
+    <div class="image-upload lapiz visible-movil">
+        <label for="img_banner_investmentrealstate">
+            <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png"
+                onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';"
+                onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+        </label>
+        <input type="file" class="editableimage" image-id="{{ site.name }}_banner_investmentrealstate" name="image" id="img_banner_investmentrealstate">
+    </div>
+    {% end %}
+    <img id="{{ site.name }}_banner_investmentrealstate" src="{{ read_image(site.name + '_banner_investmentrealstate', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_banner_investmentrealstate',) }}'"
+        class="banner-bg" alt="item">
+    <div class="banner-copy banner-copy-right">
+        <h1 class="banner-title banner-por approach-title {{editabletext}}" text-id="{{ site.name + '_investmentrealstate' }}"> {{ read_text(site.name + '_investmentrealstate') }}</h1>
+    </div>
+</section>
+
+<section class="container investments">
+    <div class="row">
+        <div class="col-xs-12">
+            <h2 class="text text-big text-black investments-title {{editabletext}}" text-id="{{ site.name + '_edit' }}"> {{ read_text(site.name + '_edit') }}</h2>
+            <div class="investments-list">
+                <div class="investments-item">
+                    <div class="investments-item-logo">
+                        {% if is_admin %}
+                        <div class="image-upload banner-invest lapiz visible-movil portafolio">
+                            <label for="img_banner_investmentrealstate_1">
+                                <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png"
+                                    onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';"
+                                    onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+                            </label>
+                            <input type="file" class="editableimage" image-id="{{ site.name }}_banner_investmentrealstate_1" name="image" id="img_banner_investmentrealstate_1">
+                        </div>
+                        {% end %}
+                        <img id="{{ site.name }}_banner_investmentrealstate_1" src="{{ read_image(site.name + '_banner_investmentrealstate_1', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_banner_investmentrealstate_1',) }}'"
+                            class="investments-item-logo-img" alt="item">
+                    </div>
+                    <div class="investments-item-copy">
+                        <ul class="investments-item-info">
+                            <li class="investments-item-info-item">
+                                <div class="text text-black text-big-med investments-item-info-item-key {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_nueve' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_nueve') }}</div>
+                                <div class="text text-big-med investments-item-info-item-value {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_diez' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_diez') }}</div>
+                            </li>
+                            <li class="investments-item-info-item">
+                                <div class="text text-black text-big-med investments-item-info-item-key {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_once' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_once') }}</div>
+                                <div class="text text-big-med investments-item-info-item-value {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_doce' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_doce') }}</div>
+                            </li>
+                            <li class="investments-item-info-item">
+                                <div class="text text-black text-big-med investments-item-info-item-key {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_trece' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_trece') }}</div>
+                                <div class="text text-big-med investments-item-info-item-value {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_catorce' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_catorce') }}</div>
+                            </li>
+                            <li class="investments-item-info-item">
+                                <div class="text text-black text-big-med investments-item-info-item-key {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_quince' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_quince') }}</div>
+                                <div class="text text-big-med investments-item-info-item-value {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_dieciseis' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_dieciseis') }}</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="investments-item">
+                    <div class="investments-item-logo">
+                        {% if is_admin %}
+                        <div class="image-upload banner-invest lapiz visible-movil portafolio">
+                            <label for="img_banner_investmentrealstate_2">
+                                <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png"
+                                    onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';"
+                                    onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+                            </label>
+                            <input type="file" class="editableimage" image-id="{{ site.name }}_banner_investmentrealstate_2" name="image" id="img_banner_investmentrealstate_2">
+                        </div>
+                        {% end %}
+                        <img id="{{ site.name }}_banner_investmentrealstate_2" src="{{ read_image(site.name + '_banner_investmentrealstate_2', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_banner_investmentrealstate_2',) }}'"
+                            class="investments-item-logo-img" alt="item">
+                    </div>
+                    <div class="investments-item-copy">
+                        <ul class="investments-item-info">
+                            <li class="investments-item-info-item">
+                                <div class="text text-black text-big-med investments-item-info-item-key {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_a' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_a') }}</div>
+                                <div class="text text-big-med investments-item-info-item-value {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_b' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_b') }}</div>
+                            </li>
+                            <li class="investments-item-info-item">
+                                <div class="text text-black text-big-med investments-item-info-item-key {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_c' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_c') }}</div>
+                                <div class="text text-big-med investments-item-info-item-value {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_d' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_d') }}</div>
+                            </li>
+                            <li class="investments-item-info-item">
+                                <div class="text text-black text-big-med investments-item-info-item-key {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_e' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_e') }}</div>
+                                <div class="text text-big-med investments-item-info-item-value {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_f' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_f') }}</div>
+                            </li>
+                            <li class="investments-item-info-item">
+                                <div class="text text-black text-big-med investments-item-info-item-key {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_g' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_g') }}</div>
+                                <div class="text text-big-med investments-item-info-item-value {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_h' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_h') }}</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="investments-item">
+                    <div class="investments-item-logo">
+                        {% if is_admin %}
+                        <div class="image-upload banner-invest lapiz visible-movil portafolio">
+                            <label for="img_banner_investmentrealstate_3">
+                                <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png"
+                                    onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';"
+                                    onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+                            </label>
+                            <input type="file" class="editableimage" image-id="{{ site.name }}_banner_investmentrealstate_3" name="image" id="img_banner_investmentrealstate_3">
+                        </div>
+                        {% end %}
+                        <img id="{{ site.name }}_banner_investmentrealstate_3" src="{{ read_image(site.name + '_banner_investmentrealstate_3', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_banner_investmentrealstate_3',) }}'"
+                            class="investments-item-logo-img" alt="item">
+                    </div>
+                    <div class="investments-item-copy">
+                        <ul class="investments-item-info">
+                            <li class="investments-item-info-item">
+                                <div class="text text-black text-big-med investments-item-info-item-key {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_dieciocho' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_dieciocho') }}</div>
+                                <div class="text text-big-med investments-item-info-item-value {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_diecinueve' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_diecinueve') }}</div>
+                            </li>
+                            <li class="investments-item-info-item">
+                                <div class="text text-black text-big-med investments-item-info-item-key {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_veinte' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_veinte') }}</div>
+                                <div class="text text-big-med investments-item-info-item-value {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_veintidos' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_veintidos') }}</div>
+                            </li>
+                            <li class="investments-item-info-item">
+                                <div class="text text-black text-big-med investments-item-info-item-key {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_veintitres' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_veintitres') }}</div>
+                                <div class="text text-big-med investments-item-info-item-value {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_veinticuatro' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_veinticuatro') }}</div>
+                            </li>
+                            <li class="investments-item-info-item">
+                                <div class="text text-black text-big-med investments-item-info-item-key {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_veinticinco' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_veinticinco') }}</div>
+                                <div class="text text-big-med investments-item-info-item-value {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_veintiseis' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_veintiseis') }}</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="investments-item">
+                    <div class="investments-item-logo">
+                        {% if is_admin %}
+                        <div class="image-upload banner-invest lapiz visible-movil portafolio">
+                            <label for="img_banner_investmentrealstate_4">
+                                <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png"
+                                    onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';"
+                                    onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+                            </label>
+                            <input type="file" class="editableimage" image-id="{{ site.name }}_banner_investmentrealstate_4" name="image" id="img_banner_investmentrealstate_4">
+                        </div>
+                        {% end %}
+                        <img id="{{ site.name }}_banner_investmentrealstate_4" src="{{ read_image(site.name + '_banner_investmentrealstate_4', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_banner_investmentrealstate_4',) }}'"
+                            class="investments-item-logo-img" alt="item">
+                    </div>
+                    <div class="investments-item-copy">
+                        <ul class="investments-item-info">
+                            <li class="investments-item-info-item">
+                                <div class="text text-black text-big-med investments-item-info-item-key {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_veintisiete' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_veintisiete') }}</div>
+                                <div class="text text-big-med investments-item-info-item-value {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_veintiocho' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_veintiocho') }}</div>
+                            </li>
+                            <li class="investments-item-info-item">
+                                <div class="text text-black text-big-med investments-item-info-item-key {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_veintinueve' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_veintinueve') }}</div>
+                                <div class="text text-big-med investments-item-info-item-value {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_treinta' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_treinta') }}</div>
+                            </li>
+                            <li class="investments-item-info-item">
+                                <div class="text text-black text-big-med investments-item-info-item-key {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_treintayuno' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_treintayuno') }}</div>
+                                <div class="text text-big-med investments-item-info-item-value {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_treintaydos' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_treintaydos') }}</div>
+                            </li>
+                            <li class="investments-item-info-item">
+                                <div class="text text-black text-big-med investments-item-info-item-key {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_treintaytres' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_treintaytres') }}</div>
+                                <div class="text text-big-med investments-item-info-item-value {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_treintaycuatro' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_treintaycuatro') }}</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="investments-item">
+                    <div class="investments-item-logo">
+                        {% if is_admin %}
+                        <div class="image-upload banner-invest lapiz visible-movil portafolio">
+                            <label for="img_banner_investmentrealstate_5">
+                                <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png"
+                                    onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';"
+                                    onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+                            </label>
+                            <input type="file" class="editableimage" image-id="{{ site.name }}_banner_investmentrealstate_5" name="image" id="img_banner_investmentrealstate_5">
+                        </div>
+                        {% end %}
+                        <img id="{{ site.name }}_banner_investmentrealstate_5" src="{{ read_image(site.name + '_banner_investmentrealstate_5', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_banner_investmentrealstate_5',) }}'"
+                            class="investments-item-logo-img" alt="item">
+                    </div>
+                    <div class="investments-item-copy">
+                        <ul class="investments-item-info">
+                            <li class="investments-item-info-item">
+                                <div class="text text-black text-big-med investments-item-info-item-key {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_treintaycinco' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_treintaycinco') }}</div>
+                                <div class="text text-big-med investments-item-info-item-value {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_treintayseis' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_treintayseis') }}</div>
+                            </li>
+                            <li class="investments-item-info-item">
+                                <div class="text text-black text-big-med investments-item-info-item-key {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_treintaysiete' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_treintaysiete') }}</div>
+                                <div class="text text-big-med investments-item-info-item-value {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_treintayocho' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_treintayocho') }}</div>
+                            </li>
+                            <li class="investments-item-info-item">
+                                <div class="text text-black text-big-med investments-item-info-item-key {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_treintaynueve' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_treintaynueve') }}</div>
+                                <div class="text text-big-med investments-item-info-item-value {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_cuarenta' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_cuarenta') }}</div>
+                            </li>
+                            <li class="investments-item-info-item">
+                                <div class="text text-black text-big-med investments-item-info-item-key {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_cuarentayuno' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_cuarentayuno') }}</div>
+                                <div class="text text-big-med investments-item-info-item-value {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_cuarentaydos' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_cuarentaydos') }}</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="investments-item">
+                    <div class="investments-item-logo">
+                        {% if is_admin %}
+                        <div class="image-upload banner-invest lapiz visible-movil portafolio">
+                            <label for="img_banner_investmentrealstate_6">
+                                <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png"
+                                    onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';"
+                                    onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+                            </label>
+                            <input type="file" class="editableimage" image-id="{{ site.name }}_banner_investmentrealstate_6" name="image" id="img_banner_investmentrealstate_6">
+                        </div>
+                        {% end %}
+                        <img id="{{ site.name }}_banner_investmentrealstate_6" src="{{ read_image(site.name + '_banner_investmentrealstate_6', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_banner_investmentrealstate_6',) }}'"
+                            class="investments-item-logo-img" alt="item">
+                    </div>
+                    <div class="investments-item-copy">
+                        <ul class="investments-item-info">
+                            <li class="investments-item-info-item">
+                                <div class="text text-black text-big-med investments-item-info-item-key {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_cuarentaytres' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_cuarentaytres') }}</div>
+                                <div class="text text-big-med investments-item-info-item-value {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_cuarentaycuatro' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_cuarentaycuatro') }}</div>
+                            </li>
+                            <li class="investments-item-info-item">
+                                <div class="text text-black text-big-med investments-item-info-item-key {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_cuarentaycinco' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_cuarentaycinco') }}</div>
+                                <div class="text text-big-med investments-item-info-item-value {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_cuarentayseis' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_cuarentayseis') }}</div>
+                            </li>
+                            <li class="investments-item-info-item">
+                                <div class="text text-black text-big-med investments-item-info-item-key {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_cuarentaysiete' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_cuarentaysiete') }}</div>
+                                <div class="text text-big-med investments-item-info-item-value {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_cuarentayocho' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_cuarentayocho') }}</div>
+                            </li>
+                            <li class="investments-item-info-item">
+                                <div class="text text-black text-big-med investments-item-info-item-key {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_cuarentaynueve' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_cuarentaynueve') }}</div>
+                                <div class="text text-big-med investments-item-info-item-value {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_cincuenta' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_cincuenta') }}</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="investments-item">
+                    <div class="investments-item-logo">
+                        {% if is_admin %}
+                        <div class="image-upload banner-invest lapiz visible-movil portafolio">
+                            <label for="img_banner_investmentrealstate_7">
+                                <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png"
+                                    onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';"
+                                    onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+                            </label>
+                            <input type="file" class="editableimage" image-id="{{ site.name }}_banner_investmentrealstate_7" name="image" id="img_banner_investmentrealstate_7">
+                        </div>
+                        {% end %}
+                        <img id="{{ site.name }}_banner_investmentrealstate_7" src="{{ read_image(site.name + '_banner_investmentrealstate_7', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_banner_investmentrealstate_7',) }}'"
+                            class="investments-item-logo-img" alt="item">
+                    </div>
+                    <div class="investments-item-copy">
+                        <ul class="investments-item-info">
+                            <li class="investments-item-info-item">
+                                <div class="text text-black text-big-med investments-item-info-item-key {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_cincuentayuno' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_cincuentayuno') }}</div>
+                                <div class="text text-big-med investments-item-info-item-value {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_cincuentaydos' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_cincuentaydos') }}</div>
+                            </li>
+                            <li class="investments-item-info-item">
+                                <div class="text text-black text-big-med investments-item-info-item-key {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_cincuentaytres' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_cincuentaytres') }}</div>
+                                <div class="text text-big-med investments-item-info-item-value {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_cincuentaycuatro' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_cincuentaycuatro') }}</div>
+                            </li>
+                            <li class="investments-item-info-item">
+                                <div class="text text-black text-big-med investments-item-info-item-key {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_cincuentaycinco' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_cincuentaycinco') }}</div>
+                                <div class="text text-big-med investments-item-info-item-value {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_cincuentayseis' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_cincuentayseis') }}</div>
+                            </li>
+                            <li class="investments-item-info-item">
+                                <div class="text text-black text-big-med investments-item-info-item-key {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_cincuentaysiete' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_cincuentaysiete') }}</div>
+                                <div class="text text-big-med investments-item-info-item-value {{editabletext}}" text-id="{{ site.name + '_textoinvestrealstate_cincuentayocho' }}">
+                                {{ read_text(site.name + '_textoinvestrealstate_cincuentayocho') }}</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include '../home/footer.html' %}
+{% end %}
